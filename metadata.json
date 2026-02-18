@@ -1,0 +1,137 @@
+
+import React from 'react';
+import { Gavel, Scale, ShieldAlert, Car, Briefcase, UserRound, Zap, Award, CheckCircle2 } from 'lucide-react';
+import { PracticeArea, Attorney, CaseResult, Testimonial } from './types';
+
+export const PRACTICE_AREAS: PracticeArea[] = [
+  {
+    id: 'criminal-defense',
+    title: 'Criminal Defense',
+    category: 'Criminal',
+    icon: 'Gavel',
+    description: 'Aggressive representation for those facing serious criminal charges in Florida.',
+    fullContent: 'Our criminal defense team is composed of former prosecutors who understand how the other side thinks. We handle everything from misdemeanors to high-stakes felonies.'
+  },
+  {
+    id: 'dui-defense',
+    title: 'DUI Defense',
+    category: 'Criminal',
+    icon: 'ShieldAlert',
+    description: 'Protecting your license and your future after a drunk driving arrest.',
+    fullContent: 'A DUI conviction can haunt you for years. We challenge breathalyzer results, field sobriety tests, and the legality of the stop to keep your record clean.'
+  },
+  {
+    id: 'personal-injury',
+    title: 'Personal Injury',
+    category: 'Injury',
+    icon: 'Scale',
+    description: 'Recovering maximum compensation for victims of negligence.',
+    fullContent: 'If you were injured due to someone else\'s negligence, we fight the insurance companies to ensure you get the medical care and financial support you deserve.'
+  },
+  {
+    id: 'car-accidents',
+    title: 'Car Accidents',
+    category: 'Injury',
+    icon: 'Car',
+    description: 'Dedicated advocacy for victims of motor vehicle collisions.',
+    fullContent: 'Florida roads can be dangerous. We help you navigate the complex world of PIP insurance and bodily injury claims to maximize your settlement.'
+  },
+  {
+    id: 'workplace-injuries',
+    title: 'Workplace Injuries',
+    category: 'Injury',
+    icon: 'Briefcase',
+    description: 'Securing your rights when you are injured on the job.',
+    fullContent: 'Workers\' compensation is often a maze. We ensure you aren\'t denied benefits and explore potential third-party liability for additional compensation.'
+  },
+  {
+    id: 'drug-charges',
+    title: 'Drug Charges',
+    category: 'Criminal',
+    icon: 'ShieldAlert',
+    description: 'Defending against possession, trafficking, and distribution allegations.',
+    fullContent: 'Drug laws in Florida are severe. We challenge the constitutionality of searches and seizures to protect your freedom and future.'
+  }
+];
+
+export const ATTORNEYS: Attorney[] = [
+  {
+    name: 'McKenna',
+    role: 'Founding Partner',
+    specialty: 'Criminal Defense Strategy',
+    bio: 'With over 15 years of experience in high-profile criminal cases, McKenna leads our defense strategy with unmatched aggression and precision. Her background in the library of law ensures no stone is left unturned.',
+    image: 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&q=80&w=800'
+  },
+  {
+    name: 'David Anderson',
+    role: 'Partner',
+    specialty: 'Personal Injury Specialist',
+    bio: 'David has recovered over $50M for accident victims across Florida, specializing in catastrophic injury and wrongful death.',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800'
+  },
+  {
+    name: 'Ann Morgan',
+    role: 'Senior Associate',
+    specialty: 'Criminal Defense',
+    bio: 'A former public defender, Ann brings a unique perspective to the courtroom, ensuring every client receives a fair and robust defense.',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800'
+  }
+];
+
+export const CASE_RESULTS: CaseResult[] = [
+  {
+    title: 'First Degree Felony Dismissed',
+    outcome: 'Not Guilty',
+    description: 'Client was facing life imprisonment; full dismissal after demonstrating procedural errors by law enforcement.',
+    category: 'Criminal'
+  },
+  {
+    title: 'Multi-Vehicle Pileup',
+    outcome: '$4.2 Million Settlement',
+    description: 'Complex liability case involving commercial trucking and severe permanent injuries.',
+    category: 'Injury'
+  },
+  {
+    title: 'Drug Trafficking Charges',
+    outcome: 'Charges Dropped',
+    description: 'Successfully challenged the constitutionality of a search warrant, leading to suppression of evidence.',
+    category: 'Criminal'
+  },
+  {
+    title: 'Wrongful Death Claim',
+    outcome: '$3.5 Million Recovery',
+    description: 'Negligence case involving a distracted driver and a grieving family seeking justice.',
+    category: 'Injury'
+  },
+  {
+    title: 'Aggravated Assault Case',
+    outcome: 'Verdict: Not Guilty',
+    description: 'Self-defense strategy successfully argued before a jury after a 10-day trial.',
+    category: 'Criminal'
+  }
+];
+
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    quote: "When I was arrested, I felt like my life was over. The team at McKenna Laws treated me with respect and fought for my freedom like family. My charges were dismissed, and I have my life back.",
+    author: "MICHAEL R.",
+    location: "TAMPA"
+  },
+  {
+    quote: "After my accident, I didn't know where to turn. David Anderson guided me every step of the way and fought the insurance company until we got the settlement I deserved. Truly life-changing.",
+    author: "SARAH L.",
+    location: "MIAMI"
+  },
+  {
+    quote: "McKenna's courtroom presence is unmatched. I've never seen someone so prepared and aggressive in protecting their client. They handled my high-stakes case with absolute precision.",
+    author: "ROBERT P.",
+    location: "ORLANDO"
+  }
+];
+
+export const TRUST_SIGNALS = [
+  { icon: <Award className="w-8 h-8 text-accent-gold" />, label: 'Top 100 Trial Lawyers' },
+  { icon: <CheckCircle2 className="w-8 h-8 text-accent-gold" />, label: '98% Success Rate' },
+  { icon: <Zap className="w-8 h-8 text-accent-gold" />, label: '24/7 Rapid Response' },
+  { icon: <UserRound className="w-8 h-8 text-accent-gold" />, label: 'Former Prosecutors' }
+];
